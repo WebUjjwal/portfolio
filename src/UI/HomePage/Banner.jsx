@@ -154,7 +154,7 @@ useEffect(() => {
           </h1>
 
           <div className="flex items-center justify-center gap-3">
-            <h1 ref={addToRefs} className="bg-[#cb91f0]">Frontend</h1>
+            <h1 ref={addToRefs} className="bg-[#cb91f0]">Frontenddd</h1>
             <h1 ref={addToRefs} className="bg-[#93f091]">Developer</h1>
           </div>
         </div>
