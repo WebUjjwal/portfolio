@@ -139,10 +139,14 @@ export default function HorizontalScroll() {
     ScrollTrigger.refresh();
 
     return () => {
-      bgST.kill();
-      tween.scrollTrigger.kill();
-      tween.kill();
-    };
+  if (bgST) bgST.kill();
+
+  if (tween?.scrollTrigger) {
+    tween.scrollTrigger.kill();
+  }
+
+  if (tween) tween.kill();
+};
   }, []);
 
   // <h1 ref={addToRefs}  w-fit mx-auto">

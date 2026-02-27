@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import ClientWrapper from "./ClientWrapper";
 
 import { Pacifico, Barriecito } from "next/font/google";
+import SmallMenu from "@/components/Header/SmallMenu";
 
 const pacifico = Pacifico({
   subsets: ["latin"],
@@ -30,9 +31,7 @@ export default function RootLayout({ children }) {
             <AlertTicker />
             <Header />
           </div>
-
           <ClientWrapper>{children}</ClientWrapper>
-
           <Footer />
         </main>
       </body>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SmallMenu from "./SmallMenu";
 
 const Header = () => {
   return (
@@ -9,19 +10,21 @@ const Header = () => {
         </h1>
 
         <div>
-          <ul className="flex items-center gap-7">
-            <li className="text-gray-300 hover:text-white">Use Cases</li>
-            <li className="text-gray-300 hover:text-white">Robotics</li>
+          <ul className="md:flex hidden items-center gap-7 ">
+            {/* <li className="text-gray-300 hover:text-white">Use Cases</li>
+            <li className="text-gray-300 hover:text-white">Robotics</li> */}
             <li className="text-gray-300 hover:text-white">$CHR</li>
-            <li className="text-gray-300 hover:text-white">Developers</li>
+            <li className="text-gray-300 hover:text-white">Work</li>
             <li className="text-gray-300 hover:text-white">Roadmap</li>
             <li className="text-gray-300 hover:text-white"><Link href='/about'>About</Link></li>
           </ul>
         </div>
 
-        <button className="font-bold gap-2 px-4 py-3 rounded-full bg-[white] text-gray-900! cursor-pointer hover:bg-[#cc91f0] transition-all duration-300">
+        <button className="md:block hidden font-bold gap-2 px-4 py-3 rounded-full bg-[white] text-gray-900! cursor-pointer hover:bg-[#cc91f0] transition-all duration-300">
           Get Started
         </button>
+
+        <SmallMenu />
       </div>
     </header>
   );
