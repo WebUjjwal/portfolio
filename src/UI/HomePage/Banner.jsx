@@ -133,7 +133,7 @@ useEffect(() => {
         {/* Heading */}
         <div
           style={{ fontFamily: "Barriecito" }}
-          className="flex flex-col items-center justify-center gap-3 text-center font-bold text-[42px] sm:text-[56px] md:text-[96px] xl:text-[160px] text-[#17111b] leading-tight select-none"
+          className="flex flex-col items-center justify-center gap-3 text-center font-bold text-[42px] sm:text-[56px] md:text-[88px] xl:text-[120px] 2xl:text-[160px] text-[#17111b] leading-tight select-none"
         >
           <div className="fixed right-2 bottom-2 z-[99999]">
             <svg

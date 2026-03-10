@@ -5,12 +5,14 @@ import RelationalFunction from "./RelationalFrontend";
 import Roadmap from "@/components/RoadMap";
 import Community from "@/components/Community";
 import Marquee from "@/components/Marquee";
+import PortfolioFaq from "@/components/PortfolioFaq";
 
 const HomePage = () => (
   <div>
     <Banner />
     <RelationalFunction />
     <HorizontalScroll />
+    <PortfolioFaq />
     <StackCards />
     <Roadmap />
     <Community />

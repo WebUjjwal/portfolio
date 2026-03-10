@@ -161,13 +161,13 @@ export default function HorizontalScroll() {
   return (
     <div
       ref={sectionRef}
-      className=" w-full h-screen overflow-hidden flex items-center"
+      className=" w-full h-screen overflow-hidden flex items-center max-[991px]:hidden"
     >
       <div className="relative">
         <h1 ref={textRef}>
           <span
             style={{ fontFamily: "Barriecito" }}
-            className="whitespace-nowrap text-[170px] text-[#f8efef] font-medium "
+            className="whitespace-nowrap 2xl:text-[170px] xl:text-[130px] text-[100px] text-[#f8efef] font-medium "
           >
             Turning designs into living web experiences — fast, interactive, and
             responsive. Expert in <span className="bg-[#FF9100] text-gray-900">React</span>,{" "}
@@ -179,11 +179,11 @@ export default function HorizontalScroll() {
 
           <div
             ref={card1Ref}
-            className="group absolute -top-10 left-20 rounded-[20px] overflow-hidden max-w-87.5 bg-[#93f091] cursor-pointer hover:animate-none"
+            className="group absolute -top-10 left-20 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#93f091] cursor-pointer hover:animate-none"
           >
-            <div className=" text-[20px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
+            <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
               <p>Relational, Not Just a Ledger</p>
-              <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
+              <div className="xl:w-8 xl:h-8 w-6 h-6 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function HorizontalScroll() {
                 overflow-hidden px-4 pb-0 group-hover:pb-3
               "
             >
-              <p className="text-gray-900 mb-6">
+              <p className="text-gray-900 mb-6 xl:text-[16px] text-[13px]">
                 Inspired by the databases that power our world, Chromia stores
                 information in a relational format. This allows it to read,
                 write, and query data far more efficiently than other
@@ -211,9 +211,9 @@ export default function HorizontalScroll() {
 
           <div
             ref={card2Ref}
-            className="group absolute -bottom-10 left-200 rounded-[20px] overflow-hidden max-w-87.5 bg-[#ffb0c2] cursor-pointer hover:animate-none"
+            className="group absolute -bottom-10 left-200 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#ffb0c2] cursor-pointer hover:animate-none"
           >
-            <div className=" text-[20px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
+            <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
               <p>Modular, not monolithic</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
@@ -228,7 +228,7 @@ export default function HorizontalScroll() {
                 overflow-hidden px-4 pb-0 group-hover:pb-3
               "
             >
-              <p className="text-wrap  text-gray-900 mb-6">
+              <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
                 By placing each dapp and system process on its own chain and
                 grouping them into clusters, our network offers parallel
                 scaling, near-instant finality, and consistent transaction
@@ -243,9 +243,9 @@ export default function HorizontalScroll() {
 
           <div
             ref={card3Ref}
-            className="group absolute -top-10 left-600 rounded-[20px] overflow-hidden max-w-87.5 bg-[#cb91f0] cursor-pointer hover:animate-none"
+            className="group absolute -top-10 left-600 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#93f091] cursor-pointer hover:animate-none"
           >
-            <div className=" text-[20px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
+            <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
               <p>Connected, Not Isolated</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
@@ -260,7 +260,7 @@ export default function HorizontalScroll() {
                 overflow-hidden px-4 pb-0 group-hover:pb-3
               "
             >
-              <p className="text-wrap  text-gray-900 mb-6">
+              <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
                 Chromia is built from scratch, but remains connected to the
                 cryptoverse through EVM bridging.
               </p>
@@ -273,9 +273,9 @@ export default function HorizontalScroll() {
 
           <div
             ref={card4Ref}
-            className="group absolute -bottom-13 left-700 rounded-[20px] overflow-hidden max-w-87.5 bg-[#ff9101] cursor-pointer hover:animate-none"
+            className="group absolute -bottom-13 left-700 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#ff9101] cursor-pointer hover:animate-none"
           >
-            <div className=" text-[20px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
+            <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
               <p>One Chain Per Dapp</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
@@ -290,7 +290,7 @@ export default function HorizontalScroll() {
                 overflow-hidden px-4 pb-0 group-hover:pb-3
               "
             >
-              <p className="text-wrap  text-gray-900 mb-6">
+              <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
                 Dapps run on dedicated chains, making them highly responsive and
                 customizable.
               </p>
@@ -303,9 +303,9 @@ export default function HorizontalScroll() {
 
           <div
             ref={card5Ref}
-            className="group absolute -top-13 left-1200 rounded-[20px] overflow-hidden max-w-87.5 bg-[#ffb502] cursor-pointer hover:animate-none"
+            className="group absolute -top-13 left-1200 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#ffb502] cursor-pointer hover:animate-none"
           >
-            <div className=" text-[20px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
+            <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
               <p>Fees? Nah, Don't Think So</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
@@ -320,7 +320,7 @@ export default function HorizontalScroll() {
                 overflow-hidden px-4 pb-0 group-hover:pb-3
               "
             >
-              <p className="text-wrap  text-gray-900 mb-6">
+              <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
                 Dapps pay for hosting in CHR and design their own fee models,
                 enabling gas free transactions for end users.
               </p>
