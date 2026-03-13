@@ -64,7 +64,7 @@ const Roadmap = () => {
       ref={sectionRef}
       className="py-20">
       <div style={{fontFamily: "Barriecito"}} className="text-center mb-60">
-        <h1 className="text-[210px] leading-60">Road map</h1>
+        <h1 className=" text-[60px] sm:text-[70px] md:text-[110px] lg:text-[210px] leading-60">Road map</h1>
       </div>
 
       <RoadmapSlider />

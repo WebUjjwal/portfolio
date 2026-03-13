@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={barriecito.variable}>
       <body className="antialiased" suppressHydrationWarning>
         <main className="dot-bg bg-fixed min-h-screen">
-          <div className="pt-2 fixed left-0 right-0 z-99999">
+          <div className="pt-2 fixed left-0 right-0 z-99999 px-4 lg:px-0">
             <AlertTicker />
             <Header />
           </div>

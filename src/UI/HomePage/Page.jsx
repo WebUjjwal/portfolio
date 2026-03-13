@@ -17,7 +17,6 @@ const HomePage = () => (
     <Roadmap />
     <Community />
     <Marquee />
-    
   </div>
 );
 

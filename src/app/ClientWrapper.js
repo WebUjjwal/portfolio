@@ -3,7 +3,7 @@
 import { useState } from "react";
 import SmoothScrollProvider from "@/components/SmoothScroll";
 import GSAPLoader from "./GSAPLoader";
-import CustomCursor from "@/components/CustomCursor";
+// import CustomCursor from "@/components/CustomCursor";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export default function ClientWrapper({ children }) {
@@ -12,7 +12,7 @@ export default function ClientWrapper({ children }) {
   return (
     <SmoothScrollProvider>
       {loading && <GSAPLoader finishLoading={() => setLoading(false)} />}
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <ScrollToTop />
       {children}
     </SmoothScrollProvider>

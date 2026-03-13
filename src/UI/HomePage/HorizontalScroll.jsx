@@ -333,12 +333,12 @@ export default function HorizontalScroll() {
 
           <div
             ref={card6Ref}
-            className="w-70 h-70 rounded-full overflow-hidden absolute right-700 -top-49"
+            className="w-70 h-70 rounded-full overflow-hidden absolute right-700 -top-49 xl:block hidden"
           >
             <video autoPlay muted loop src="/gif-2.mp4" />
           </div>
 
-          <div className="rounded-full overflow-hidden absolute right-10 -top-70">
+          <div className="rounded-full overflow-hidden absolute right-10 -top-70 xl:block hidden">
             <video autoPlay muted loop src="/gif-1.mp4" />
           </div>
         </h1>

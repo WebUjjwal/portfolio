@@ -50,7 +50,7 @@ export default function PortfolioFaq() {
   };
 
   return (
-    <div className="max-w-xl mx-auto space-y-4 text-white hidden max-[991px]:block">
+    <div className="container px-4 mx-auto space-y-4 text-white hidden max-[991px]:block">
 
       {faqs.map((faq, index) => (
         <div

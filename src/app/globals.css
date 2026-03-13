@@ -21,11 +21,11 @@
 }
 
 
-@layer base {
+/* @layer base {
   * {
     cursor: none !important;
   }
-}
+} */
 
 ::selection {
   background-color: #FF9101;
