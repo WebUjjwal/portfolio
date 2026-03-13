@@ -20,6 +20,9 @@
   }
 }
 
+body {
+  background-color: #f8efef;
+}
 
 /* @layer base {
   * {
