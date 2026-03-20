@@ -60,7 +60,7 @@ export default function GSAPLoader({ finishLoading }) {
     });
   }, []);
 
-  
+
 
   return (
     <div className="fixed inset-0 bg-black flex flex-col items-center justify-center z-999999">
@@ -77,7 +77,7 @@ export default function GSAPLoader({ finishLoading }) {
       </div>
 
       {/* Progress line */}
-      <div className="absolute bottom-2 left-2 right-2 w-full h-2 bg-[#17111b] z-50">
+      <div className="absolute bottom-0 left-0 right-0 w-full h-1 bg-[#17111b] z-50">
         <div ref={progressRef} className="h-full w-0 bg-[#ff9100]" />
       </div>
 

@@ -139,14 +139,14 @@ export default function HorizontalScroll() {
     ScrollTrigger.refresh();
 
     return () => {
-  if (bgST) bgST.kill();
+      if (bgST) bgST.kill();
 
-  if (tween?.scrollTrigger) {
-    tween.scrollTrigger.kill();
-  }
+      if (tween?.scrollTrigger) {
+        tween.scrollTrigger.kill();
+      }
 
-  if (tween) tween.kill();
-};
+      if (tween) tween.kill();
+    };
   }, []);
 
   // <h1 ref={addToRefs}  w-fit mx-auto">
@@ -179,10 +179,10 @@ export default function HorizontalScroll() {
 
           <div
             ref={card1Ref}
-            className="group absolute -top-10 left-20 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#93f091] cursor-pointer hover:animate-none"
+            className="group absolute -top-10 left-20 rounded-[20px] overflow-hidden xl:max-w-87.5 min-w-74.5 bg-[#93f091] cursor-pointer hover:animate-none"
           >
             <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
-              <p>Relational, Not Just a Ledger</p>
+              <p>Frontend Development</p>
               <div className="xl:w-8 xl:h-8 w-6 h-6 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
               </div>
@@ -197,10 +197,7 @@ export default function HorizontalScroll() {
               "
             >
               <p className="text-gray-900 mb-6 xl:text-[16px] text-[13px]">
-                Inspired by the databases that power our world, Chromia stores
-                information in a relational format. This allows it to read,
-                write, and query data far more efficiently than other
-                blockchains.
+                I specialize in building modern, scalable interfaces using React.js and Next.js. My focus is creating clean component architecture and reusable UI systems.
               </p>
 
               <button className="font-bold gap-2 px-4 py-2 rounded-full w-full bg-white text-gray-900 cursor-pointer hover:bg-[#cc91f0] transition-all duration-300">
@@ -214,7 +211,7 @@ export default function HorizontalScroll() {
             className="group absolute -bottom-10 left-200 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#ffb0c2] cursor-pointer hover:animate-none"
           >
             <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
-              <p>Modular, not monolithic</p>
+              <p>High Performance Websites</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
               </div>
@@ -229,10 +226,7 @@ export default function HorizontalScroll() {
               "
             >
               <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
-                By placing each dapp and system process on its own chain and
-                grouping them into clusters, our network offers parallel
-                scaling, near-instant finality, and consistent transaction
-                costs.
+                I optimize applications for speed using techniques like lazy loading, code splitting, and server-side rendering to ensure fast and smooth user experiences.
               </p>
 
               <button className="font-bold gap-2 px-4 py-2 rounded-full w-full bg-[white] text-gray-900! cursor-pointer hover:bg-[#cc91f0] transition-all duration-300">
@@ -246,7 +240,7 @@ export default function HorizontalScroll() {
             className="group absolute -top-10 left-600 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#93f091] cursor-pointer hover:animate-none"
           >
             <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
-              <p>Connected, Not Isolated</p>
+              <p>Creative UI & Animations</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
               </div>
@@ -261,8 +255,7 @@ export default function HorizontalScroll() {
               "
             >
               <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
-                Chromia is built from scratch, but remains connected to the
-                cryptoverse through EVM bridging.
+                I design engaging user experiences with modern UI patterns and smooth animations using GSAP, Framer Motion, and Tailwind CSS.
               </p>
 
               <button className="font-bold gap-2 px-4 py-2 rounded-full w-full bg-[white] text-gray-900! cursor-pointer hover:bg-[#cc91f0] transition-all duration-300">
@@ -276,7 +269,7 @@ export default function HorizontalScroll() {
             className="group absolute -bottom-13 left-700 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#ff9101] cursor-pointer hover:animate-none"
           >
             <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
-              <p>One Chain Per Dapp</p>
+              <p>Responsive & Mobile First</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
               </div>
@@ -291,8 +284,7 @@ export default function HorizontalScroll() {
               "
             >
               <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
-                Dapps run on dedicated chains, making them highly responsive and
-                customizable.
+                All interfaces I build are fully responsive and optimized for different screen sizes, ensuring seamless experiences across devices.
               </p>
 
               <button className="font-bold gap-2 px-4 py-2 rounded-full w-full bg-[white] text-gray-900! cursor-pointer hover:bg-[#cc91f0] transition-all duration-300">
@@ -306,7 +298,7 @@ export default function HorizontalScroll() {
             className="group absolute -top-13 left-1200 rounded-[20px] overflow-hidden xl:max-w-87.5 max-w-74.5 bg-[#ffb502] cursor-pointer hover:animate-none"
           >
             <div className="xl:text-[20px] text-[16px] text-gray-900 flex items-center justify-between font-medium px-4 py-3">
-              <p>Fees? Nah, Don't Think So</p>
+              <p>API Integration & Backend</p>
               <div className="w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-full">
                 <MdOutlineKeyboardArrowDown className="text-[22px] group-hover:rotate-180 transition-transform duration-800" />
               </div>
@@ -321,8 +313,7 @@ export default function HorizontalScroll() {
               "
             >
               <p className="text-wrap  text-gray-900 mb-6 xl:text-[16px] text-[13px]">
-                Dapps pay for hosting in CHR and design their own fee models,
-                enabling gas free transactions for end users.
+                I integrate REST and GraphQL APIs and work with modern backend services like PostgreSQL, Node.js, and server actions in Next.js.
               </p>
 
               <button className="font-bold gap-2 px-4 py-2 rounded-full w-full bg-[white] text-gray-900! cursor-pointer hover:bg-[#cc91f0] transition-all duration-300">
